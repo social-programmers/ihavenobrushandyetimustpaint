@@ -33,21 +33,6 @@ function setup() {
   //socket.on('spliceLines', sline => sLines(sline));
   socket.on('updateCam', frame => updateFrame(frame));
 
-  closeButton = createButton('×');
-  closeButton.position(20, 20);
-  closeButton.mousePressed(resetCanvas);
-
-  screenButton = createButton('↓');
-  screenButton.position(20, windowHeight - 100);
-  screenButton.mousePressed(screenShot);
-
-  colorButton = createButton('#');
-  colorButton.position(windowWidth - 90, 20);
-  colorButton.mousePressed(changeColor);
-
-  linkButton = createButton('?');
-  linkButton.position(windowWidth - 90, windowHeight - 100);
-  linkButton.mousePressed(goTo);
 
   setTimeout(grabShot, 1000);
 }
