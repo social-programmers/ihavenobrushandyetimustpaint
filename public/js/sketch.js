@@ -18,7 +18,6 @@ let cam, camShot;
 
 function setup() {
   pixelDensity(1);
-  noCursor();
 
   canvasIMG = createCanvas(window.windowWidth, window.windowHeight);
   background(bgr, bgg, bgb);
