@@ -4,7 +4,7 @@ let canvasIMG, updatedCanvas;
 
 function setup() {
   colorMode(HSB, 2*PI, 1, 1, 255);
-  createCanvas(600, 600);
+  createCanvas(window.windowWidth, window.windowHeight)
 }
 
 var y = 25;
